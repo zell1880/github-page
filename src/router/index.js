@@ -21,6 +21,12 @@ Vue.use(VueRouter)
     path: '/skills',
     name: 'Skills',
     component: Skills
+  },
+  {
+    path: '*',
+    redirect: {
+      name: 'About'
+    }
   }
 ]
 
