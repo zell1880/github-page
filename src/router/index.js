@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import About from '../views/About.vue'
 import Timeline from '../views/Timeline.vue'
 import Skills from '../views/Skills.vue'
+import Todo from '../views/Todo.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ Vue.use(VueRouter)
     path: '/skills',
     name: 'Skills',
     component: Skills
+  },
+  {
+    path: '/todo',
+    name: 'Todo',
+    component: Todo
   },
   {
     path: '*',

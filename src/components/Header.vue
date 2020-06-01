@@ -10,7 +10,7 @@
         <b-nav-item to="/about" class="px-2"><b-icon-person/> About </b-nav-item>
         <b-nav-item to="/timeline" class="px-2"><b-icon-clock/> Timeline </b-nav-item>
         <b-nav-item to="/skills"><b-icon-tools/> Skills </b-nav-item>
-        <b-nav-item class="px-2"><b-icon-card-checklist/> ToDo </b-nav-item>
+        <b-nav-item to="/todo" class="px-2"><b-icon-card-checklist/> ToDo </b-nav-item>
       </b-navbar-nav>
       </b-collapse>
     </b-navbar>
