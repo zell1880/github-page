@@ -1,11 +1,12 @@
 <template>
-  <div class="my-5">
-     <link rel="stylesheet" 
+
+  <div class="d-flex align-items-center min-vh-100">
+    <link rel="stylesheet" 
         href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
         crossorigin="anonymous">
-    <b-jumbotron class="my-5" bg-variant="dark" text-variant="white" border-variant="light">
-
+    <b-jumbotron class="container" bg-variant="dark" text-variant="white" >
+      
       <template v-slot:header>Skills In-Training</template>
 
       <template v-slot:lead>
@@ -32,14 +33,14 @@
   </div>
 </template>
 <script>
-
-
 export default {
   components: {
 
   }
 }
 </script>
-<style>
-
+<style scoped>
+.container{
+  max-width: 100%
+}
 </style>

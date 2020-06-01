@@ -1,25 +1,29 @@
 <template>
-  <div id="app">
-    <div class="body">
-      <MainPage/>
-    </div>
-  </div>
-</template>
-<script>
-import MainPage from '@/components/MainPage.vue'
+  <div class="d-flex align-items-center min-vh-100">
+  
+    <b-jumbotron class="container" bg-variant="dark" text-variant="white" >
+      <template v-slot:header>Lim Zi Hao</template>
 
-export default {
-  components: {
-    MainPage
-  }
-}
-</script>
-<style>
+      <template v-slot:lead>
+        A fresh graduate looking for something to do.
+      </template>
 
-.body {
-  width: 100%;
-  height: 100%;
-  padding-top:40px;
-  padding-bottom:40px
+      <hr class="my-4 border-white">
+
+      <p>
+        Links to be added here:<br>
+        Linkedin | Github
+      </p>
+    </b-jumbotron>
+
+</div>
+
+  
+</template> 
+
+<style scoped>
+.container{
+  max-width: 100%
 }
 </style>
+
