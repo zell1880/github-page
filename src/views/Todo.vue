@@ -1,14 +1,29 @@
 <template>
-  <div class="my-5">
-    <b-jumbotron class="" bg-variant="dark" text-variant="white" border-variant="light">
-      
+  <div class="d-flex align-items-center min-vh-100">
+   
+    <b-jumbotron class="container" bg-variant="dark" text-variant="white" border-variant="light">
+       <div v-for="todo in allTodos" :key="todo.id" >{{ todo.title }} </div>
     </b-jumbotron>
-    <span class="pt-5"/>
   </div>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
-  computed: mapGetters(['allTodos'])
+  name:"Todos",
+  methods: {
+    ...mapActions(['fetchTodos']),
+  },
+  computed: {
+    ...mapGetters(['allTodos'])
+  },
+  created() {
+    this.fetchTodos()
+  }
+  
 }
-</script>>
+</script>
+<style scoped>
+.container{
+  max-width: 100%
+}
+</style>
